@@ -54,8 +54,11 @@ function playAgain(){
         cell.style.backgroundColor = 'white'
         cell.textContent = ''
     })
+    arr.forEach(ar => {
+        let i = arr.indexOf(ar)
+        arr[i] = null
+    })
 
-    arr = Array(9).fill(null)
     currentPlayer = "X"
 
 }
