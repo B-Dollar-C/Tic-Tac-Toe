@@ -22,6 +22,7 @@ function checkWinnerDraw(){
         msg.textContent = "Congratulations!"
         loader.style.display = 'flex'
         setTimeout(()=>{popUp()}, 1000)
+        return
        
     }
     if(!arr.some(el => el === null)){
@@ -44,6 +45,7 @@ function handleClick(el){
         currentPlayer = "X"
         element.style.backgroundColor = "#6faad8"
     }
+    console.log("next-> "+ currentPlayer)
 }
 
 function playAgain(){
